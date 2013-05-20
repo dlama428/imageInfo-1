@@ -2,7 +2,7 @@
 <html>
 <head>
     <title></title>
-    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="imgInfo.js"></script>
     <style>
         .ui-imginfo-wrap{ margin: 10px;position: relative; float:left;}
@@ -13,15 +13,10 @@
 </head>
 <body>
     <img class="imginfo" src="https://www.google.com.hk/images/srpr/logo4w.png" title="make text here" width="250">
-    <img src="https://www.google.com.hk/images/srpr/logo4w.png" class="jump imginfo" title="^O^" width="250px"/>
-
-<script>
-
-    $(function(){
-        $('.imginfo').imageInfo();
-//        $('.jump').imageJump({wrapOverwrite: '.ui-imginfo-wrap'});
-    });
-
-</script>
+    <script>
+        $(function(){
+            $('.imginfo').imageInfo();
+        });
+    </script>
 </body>
 </html>
