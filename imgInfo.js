@@ -36,9 +36,11 @@
 
                     function () {
                         wrapper.children('.mask').stop().fadeOut(opts.speed);
-                    });
-            });
+                    })
+
+            })
+
         });
     };
 
-})(jQuery);
+}(jQuery));
