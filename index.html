@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="imgInfo.js"></script>
+    <style>
+        .ui-imginfo-wrap{ margin: 10px;position: relative; float:left;}
+        .ui-imginfo-wrap .mask{ background: rgba(199, 209, 180, 0.61);height:auto;color: #F30; width:100%;
+            display: none; position:absolute; bottom:0; font-weight:bold; font-size: 16px; z-index: 1;}
+        .ui-imginfo-wrap .mask > div{padding:5px;}
+    </style>
+</head>
+<body>
+    <img class="imginfo" src="https://www.google.com.hk/images/srpr/logo4w.png" title="make text here" width="250">
+    <img src="https://www.google.com.hk/images/srpr/logo4w.png" class="jump imginfo" title="^O^" width="250px"/>
+
+<script>
+
+    $(function(){
+        $('.imginfo').imageInfo();
+//        $('.jump').imageJump({wrapOverwrite: '.ui-imginfo-wrap'});
+    });
+
+</script>
+</body>
+</html>
